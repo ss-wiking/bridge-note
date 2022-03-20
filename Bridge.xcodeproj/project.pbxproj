@@ -12,10 +12,10 @@
 		DF5FA5B727E728FB00AB0317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5FA5B627E728FB00AB0317 /* Assets.xcassets */; };
 		DF5FA5BA27E728FB00AB0317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5FA5B927E728FB00AB0317 /* Preview Assets.xcassets */; };
 		DF5FA5BC27E728FB00AB0317 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5BB27E728FB00AB0317 /* Persistence.swift */; };
-		DF5FA5BF27E728FB00AB0317 /* Bridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5BD27E728FB00AB0317 /* Bridge.xcdatamodeld */; };
 		DF5FA5C927E728FB00AB0317 /* BridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5C827E728FB00AB0317 /* BridgeTests.swift */; };
 		DF5FA5D327E728FB00AB0317 /* BridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5D227E728FB00AB0317 /* BridgeUITests.swift */; };
 		DF5FA5D527E728FB00AB0317 /* BridgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5D427E728FB00AB0317 /* BridgeUITestsLaunchTests.swift */; };
+		DFC265D727E7A240009F056D /* Bridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFC265D527E7A240009F056D /* Bridge.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +42,12 @@
 		DF5FA5B627E728FB00AB0317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5FA5B927E728FB00AB0317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF5FA5BB27E728FB00AB0317 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		DF5FA5BE27E728FB00AB0317 /* Bridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bridge.xcdatamodel; sourceTree = "<group>"; };
 		DF5FA5C427E728FB00AB0317 /* BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5FA5C827E728FB00AB0317 /* BridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeTests.swift; sourceTree = "<group>"; };
 		DF5FA5CE27E728FB00AB0317 /* BridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5FA5D227E728FB00AB0317 /* BridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUITests.swift; sourceTree = "<group>"; };
 		DF5FA5D427E728FB00AB0317 /* BridgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFC265D627E7A240009F056D /* Bridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bridge.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				DF5FA5B427E728FA00AB0317 /* ContentView.swift */,
 				DF5FA5B627E728FB00AB0317 /* Assets.xcassets */,
 				DF5FA5BB27E728FB00AB0317 /* Persistence.swift */,
-				DF5FA5BD27E728FB00AB0317 /* Bridge.xcdatamodeld */,
+				DFC265D527E7A240009F056D /* Bridge.xcdatamodeld */,
 				DF5FA5B827E728FB00AB0317 /* Preview Content */,
 			);
 			path = Bridge;
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5FA5BF27E728FB00AB0317 /* Bridge.xcdatamodeld in Sources */,
+				DFC265D727E7A240009F056D /* Bridge.xcdatamodeld in Sources */,
 				DF5FA5BC27E728FB00AB0317 /* Persistence.swift in Sources */,
 				DF5FA5B527E728FA00AB0317 /* ContentView.swift in Sources */,
 				DF5FA5B327E728FA00AB0317 /* BridgeApp.swift in Sources */,
@@ -354,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,6 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,12 +597,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DF5FA5BD27E728FB00AB0317 /* Bridge.xcdatamodeld */ = {
+		DFC265D527E7A240009F056D /* Bridge.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DF5FA5BE27E728FB00AB0317 /* Bridge.xcdatamodel */,
+				DFC265D627E7A240009F056D /* Bridge.xcdatamodel */,
 			);
-			currentVersion = DF5FA5BE27E728FB00AB0317 /* Bridge.xcdatamodel */;
+			currentVersion = DFC265D627E7A240009F056D /* Bridge.xcdatamodel */;
 			path = Bridge.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
