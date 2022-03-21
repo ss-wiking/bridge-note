@@ -15,6 +15,8 @@
 		DF5FA5C927E728FB00AB0317 /* BridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5C827E728FB00AB0317 /* BridgeTests.swift */; };
 		DF5FA5D327E728FB00AB0317 /* BridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5D227E728FB00AB0317 /* BridgeUITests.swift */; };
 		DF5FA5D527E728FB00AB0317 /* BridgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA5D427E728FB00AB0317 /* BridgeUITestsLaunchTests.swift */; };
+		DFB981F627E90A1F0008653B /* NewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB981F527E90A1F0008653B /* NewPlayer.swift */; };
+		DFB981F927E90F090008653B /* EditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB981F827E90F090008653B /* EditScore.swift */; };
 		DFC265D727E7A240009F056D /* Bridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFC265D527E7A240009F056D /* Bridge.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,9 @@
 		DF5FA5CE27E728FB00AB0317 /* BridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5FA5D227E728FB00AB0317 /* BridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUITests.swift; sourceTree = "<group>"; };
 		DF5FA5D427E728FB00AB0317 /* BridgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFB981F527E90A1F0008653B /* NewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayer.swift; sourceTree = "<group>"; };
+		DFB981F727E90BCF0008653B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFB981F827E90F090008653B /* EditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScore.swift; sourceTree = "<group>"; };
 		DFC265D627E7A240009F056D /* Bridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bridge.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +103,8 @@
 		DF5FA5B127E728FA00AB0317 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				DFB981F727E90BCF0008653B /* Info.plist */,
+				DFB981F227E9086F0008653B /* Views */,
 				DF5FA5B227E728FA00AB0317 /* BridgeApp.swift */,
 				DF5FA5B427E728FA00AB0317 /* ContentView.swift */,
 				DF5FA5B627E728FB00AB0317 /* Assets.xcassets */,
@@ -131,6 +138,15 @@
 				DF5FA5D427E728FB00AB0317 /* BridgeUITestsLaunchTests.swift */,
 			);
 			path = BridgeUITests;
+			sourceTree = "<group>";
+		};
+		DFB981F227E9086F0008653B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFB981F527E90A1F0008653B /* NewPlayer.swift */,
+				DFB981F827E90F090008653B /* EditScore.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB981F927E90F090008653B /* EditScore.swift in Sources */,
 				DFC265D727E7A240009F056D /* Bridge.xcdatamodeld in Sources */,
 				DF5FA5BC27E728FB00AB0317 /* Persistence.swift in Sources */,
 				DF5FA5B527E728FA00AB0317 /* ContentView.swift in Sources */,
 				DF5FA5B327E728FA00AB0317 /* BridgeApp.swift in Sources */,
+				DFB981F627E90A1F0008653B /* NewPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +448,9 @@
 				DEVELOPMENT_TEAM = A3L247PA8Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bridge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -460,9 +478,9 @@
 				DEVELOPMENT_TEAM = A3L247PA8Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bridge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -21,10 +21,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(players) { player in
-                    NavigationLink {
-                        // TODO: Make editing score
-                    } label: {
+                    NavigationLink(destination: EditScore(player: player)) {
                         Text(player.name!)
+                        Spacer()
+                        Text("Score \(player.score)").opacity(0.5)
                     }
                 }
             }
@@ -64,44 +64,6 @@ struct ContentView: View {
         for player in players {
             viewContext.delete(player)
         }
-        
-        try? viewContext.save()
-    }
-}
-
-struct NewPlayer: View {
-    @Environment(\.managedObjectContext) private var viewContext
-    @Environment(\.dismiss) var dismiss
-    @State var name: String = ""
-    
-    var body: some View {
-        NavigationView {
-            Form {
-                TextField("Name", text: $name)
-            }
-            .navigationTitle("New Player")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") {
-                        dismiss()
-                    }
-                }
-                
-                ToolbarItem {
-                    Button("Save") {
-                        save()
-                        dismiss()
-                    }
-                }
-            }
-        }
-    }
-    
-    private func save() {
-        let player = Player(context: viewContext)
-        player.name = name
-        player.score = 0
         
         try? viewContext.save()
     }
